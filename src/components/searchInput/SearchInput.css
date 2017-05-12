@@ -1,0 +1,20 @@
+.search-control {
+  min-width: 283px;
+  padding: 8px;
+  border: solid 2px #e8e400;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #e8e400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.search-control::placeholder {
+  color: #e8e400;
+  opacity: 0.5;
+}
+
+.search-control:focus {
+  -webkit-focus-ring-color: none;
+  outline: none;
+}
