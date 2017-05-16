@@ -5,15 +5,15 @@
   perspective: 985px;
   font-size: 255%;
   font-weight: 600;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   line-height: 150%;
-  text-align: justify
+  text-align: justify;
 }
 
 .results-section > ul {
   position: relative;
   top: -525px;
-  width: 835px;
+  max-width: 835px;
   text-align: center;
   list-style-type: none;
   margin: 0px;
@@ -24,4 +24,18 @@
 
 .results-section > ul li {
   padding: 0 0 8px 0;
+  cursor: pointer;
+}
+
+
+@media (max-width: 650px) {
+  .results-section {
+    font-size: 208%;
+  }
+}
+
+@media (max-width: 445px) {
+  .results-section {
+    font-size: 165%;
+  }
 }

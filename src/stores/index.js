@@ -1,11 +1,10 @@
 import { createStore, applyMiddleware } from 'redux';
-
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import searchCharacters from './reducers/searchResults';
+import reducers from '../reducers';
 
 export default createStore(
-  searchCharacters,
+  reducers,
   applyMiddleware(thunk, logger)
 );

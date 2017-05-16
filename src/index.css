@@ -12,5 +12,6 @@ body {
   color: #e8e400;
   background: url("./star-background.jpg") no-repeat center center;
   background-size: cover;
+  box-sizing: border-box;
   font-family: arial, sans-serif;
 }

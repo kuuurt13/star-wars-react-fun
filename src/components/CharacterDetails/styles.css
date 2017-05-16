@@ -1,0 +1,45 @@
+.character-details {
+  position: relative;
+  top: -40px;
+  right: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 3px;
+  border-radius: 5px;
+}
+
+.character-details__clear {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.character-details__header {
+  margin: 0;
+}
+
+.character-details__sections {
+  display: inline-block;
+  width: 48%;
+  padding: 10px 1%;
+  vertical-align: top;
+  text-transform: capitalize;
+}
+
+.character-details__detail {
+  padding: 4px;
+}
+
+@media (max-width: 400px) {
+  .character-details {
+    max-width: 100%;
+  }
+  .character-details__sections {
+    width: 100%;
+  }
+}
