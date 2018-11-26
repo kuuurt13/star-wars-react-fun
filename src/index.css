@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   font-size: 20px;
   color: #e8e400;
-  background: url("./star-background.jpg") no-repeat center center;
+  background: url("./assets/images/star-background.jpg") no-repeat center center;
   background-size: cover;
   box-sizing: border-box;
   font-family: arial, sans-serif;

@@ -1,4 +1,9 @@
-# Star Wars React Redux Fun
-What better way to improve my React and Redux skill than with [Star Wars](https://kuuurt13.github.io/star-wars-react-redux-fun)....
+# Star Wars React Hooks Fun
+A simple Star Wars character search App created to learn the new React Hooks proposal that is in [React v16.7](https://reactjs.org/docs/hooks-intro.html).
 
-Was created with [Create React App](https://github.com/facebookincubator/create-react-app) and uses the [Star Wars API](https://swapi.co/) to search for Star Wars characters.
+
+## Technology
+* [React v16.7:](https://reactjs.org/) Includes new hooks proposal
+* [Create React App:](https://github.com/facebookincubator/create-react-app) Build config
+* [Prettier:](https://prettier.io/) Code formatting
+* [Star Wars API:](https://swapi.co/) Used for API
