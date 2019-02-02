@@ -1,6 +1,6 @@
 import React, { createRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import './styles.css'
+import './SearchInput.css'
 
 function SearchInput({ debounce, onChange }) {
   const inputRef = createRef()
@@ -19,15 +19,13 @@ function SearchInput({ debounce, onChange }) {
   }
 
   return (
-    <div>
-      <input
-        type="text"
-        ref={inputRef}
-        className="search-control"
-        onInput={debounceInput}
-        placeholder="Search Star Wars Characters"
-      />
-    </div>
+    <input
+      type="text"
+      ref={inputRef}
+      className="search-control"
+      onInput={debounceInput}
+      placeholder="Search Star Wars Characters"
+    />
   )
 }
 

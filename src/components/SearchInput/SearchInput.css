@@ -18,10 +18,3 @@
   -webkit-focus-ring-color: none;
   outline: none;
 }
-
-@media (max-width: 445px) {
-  .search-control {
-    min-width: auto;
-    width: 80%;
-  }
-}

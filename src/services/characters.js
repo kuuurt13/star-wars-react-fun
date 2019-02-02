@@ -6,6 +6,7 @@ export const search = async q => {
 
   return results.map(char => ({
     ...char,
+    // For some reason API doesnt return id
     id: char.url.slice(0, -1).split('/people/')[1],
   }))
 }

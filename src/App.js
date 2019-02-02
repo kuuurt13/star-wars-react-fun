@@ -1,28 +1,29 @@
-import React from 'react'
-import Search from './screens/Search'
-import CharacterDetail from './screens/CharacterDetails'
-import { useCharacterSearch, useCharacterDetail } from './effects'
+import React, { Fragment } from 'react'
+import { Search } from './containers'
+import { CharacterDetails } from './components'
+import { useCharacterDetails } from './effects'
+import starWarsLogo from './assets/images/star-wars-logo.png'
 
 const App = () => {
-  const [results, searchCharacters] = useCharacterSearch()
-  const [character, getCharacter] = useCharacterDetail()
+  const [character, getCharacter] = useCharacterDetails()
 
   function clearCharacter() {
     getCharacter(null)
   }
 
   return (
-    <div>
+    <Fragment>
+      <img
+        className="main__img"
+        src={starWarsLogo}
+        alt="Star Wars: React App"
+      />
       {character ? (
-        <CharacterDetail character={character} onClose={clearCharacter} />
+        <CharacterDetails character={character} onClose={clearCharacter} />
       ) : (
-        <Search
-          onSearch={searchCharacters}
-          onSelect={getCharacter}
-          results={results}
-        />
+        <Search onSelect={getCharacter} />
       )}
-    </div>
+    </Fragment>
   )
 }
 
