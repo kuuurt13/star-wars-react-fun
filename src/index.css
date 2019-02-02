@@ -1,17 +1,26 @@
 html,
 body {
-  display: flex;
-  overflow: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
   font-size: 20px;
-  color: #e8e400;
   background: url("./assets/images/star-background.jpg") no-repeat center center;
   background-size: cover;
+  overflow: hidden;
   box-sizing: border-box;
   font-family: arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0 0 0;
+  color: #e8e400;
+}
+
+.main__img {
+  max-width: 320px;
+  margin-bottom: 40px;
 }

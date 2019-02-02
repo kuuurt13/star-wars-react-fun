@@ -1,7 +1,8 @@
 import React from 'react'
-import './styles.css'
+import PropTypes from 'prop-types'
+import './CharacterDetails.css'
 
-export default ({ character, onClose }) => (
+const CharacterDetails = ({ character, onClose }) => (
   <section className="character-details">
     <h2 className="character-details__header">{character.name}</h2>
     <div className="character-details__clear" onClick={onClose}>
@@ -32,3 +33,19 @@ export default ({ character, onClose }) => (
     </div>
   </section>
 )
+
+CharacterDetails.propTypes = {
+  character: PropTypes.shape({
+    name: PropTypes.string,
+    gender: PropTypes.string,
+    birth_year: PropTypes.string,
+    height: PropTypes.string,
+    mass: PropTypes.string,
+    eye_color: PropTypes.string,
+    hair_color: PropTypes.string,
+    skin_color: PropTypes.string,
+  }),
+  onClose: PropTypes.func,
+}
+
+export default CharacterDetails

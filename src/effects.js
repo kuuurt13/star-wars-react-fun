@@ -3,15 +3,19 @@ import { search, getDetails } from './services/characters'
 
 export function useCharacterSearch() {
   const [results, setResults] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
 
-  function searchCharacters(term) {
-    search(term).then(setResults)
+  async function searchCharacters(term) {
+    setIsLoading(true)
+    const data = await search(term)
+    setResults(data)
+    setIsLoading(false)
   }
 
-  return [results, searchCharacters]
+  return [{ results, isLoading }, searchCharacters]
 }
 
-export function useCharacterDetail() {
+export function useCharacterDetails() {
   const [character, setCharacter] = useState(null)
 
   function getCharacter(id) {
