@@ -1,10 +1,15 @@
-# Star Wars React Hooks Fun
-A simple Star Wars character search App created to learn the new React Hooks proposal that is in [React v16.7](https://reactjs.org/docs/hooks-intro.html).
+# Star Wars React App
+
+A simple Star Wars character search app I update periodically to learn new React technologies/libraries.
 
 **URL:** https://www.kurtstackhouse.com/star-wars-react-fun/
 
 ## Technology
-* [React v16.7:](https://reactjs.org/) Includes new hooks proposal
-* [Create React App:](https://github.com/facebookincubator/create-react-app) Build config
-* [Prettier:](https://prettier.io/) Code formatting
-* [Star Wars API:](https://swapi.co/) Used for API
+
+- [React 17](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Recoil](https://recoiljs.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Router](https://reactrouter.com/)
+- [Prettier](https://prettier.io/)
+- [Star Wars API](https://swapi.co/)
